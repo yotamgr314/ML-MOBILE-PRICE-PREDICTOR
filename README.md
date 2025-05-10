@@ -1,30 +1,36 @@
-# EX-04-PYHTON-COURSE
 
----
+```markdown
+# Mobile Price Prediction
 
-##  Analysis Steps
-1. **Correlation Heatmap**:
-   - Visualized correlations between all features and identified `ram` as strongly correlated with `price`.
+This project analyzes a dataset of mobile phone specifications to predict their prices using data visualization and machine learning techniques.
 
-2. **Scatter Plots**:
-   - Plotted relationships between `ram`, `px_width`, `px_height`, and `price`.
+## Project Overview
 
-3. **Feature Processing**:
-   - Added ordinal and nominal features to enhance the dataset.
+The dataset includes various features such as RAM, pixel dimensions, and more. The analysis involves:
 
-4. **Price Transformation Analysis**:
-   - Identified a linear transformation for `price_2` based on `ram`.
+- **Correlation Heatmap**: Identifying relationships between features and the target variable, `price`.
+- **Scatter Plots**: Visualizing the impact of features like `ram`, `px_width`, and `px_height` on `price`.
+- **Feature Engineering**: Incorporating ordinal and nominal features to enhance model performance.
+- **Price Transformation**: Applying linear transformations to the `price` variable for better model fitting.
 
----
+2. **Install required packages**:
 
-## How to Run the Project
-1. Clone this repository.
-2. Ensure you have Python installed with the following libraries:
-   - `pandas`
-   - `numpy`
-   - `matplotlib`
-   - `seaborn`
-   - `sklearn`
-3. Run the `data_processing.py` file:
-   ```bash
-   python utils/data_processing.py
+   Ensure you have Python 3.x installed. Then, install the necessary libraries:
+   pip install pandas numpy matplotlib seaborn scikit-learn
+
+## Dependencies
+
+* Python 3.x
+* pandas
+* numpy
+* matplotlib
+* seaborn
+* scikit-learn
+
+## Results
+
+Key findings include:
+
+* **RAM** has a strong positive correlation with **price**.
+* Visualizations reveal linear relationships between certain features and the target variable.
+* Feature engineering and transformation techniques improved model accuracy.
